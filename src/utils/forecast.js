@@ -2,7 +2,7 @@ const got = require('got');
 
 const forecast = async(long, lat, callback)=>{
     try {
-        const url = 'https://api.darksky.net/forecast/d3c81eb08240e0f48cde6e7d8133b720/'+encodeURI(lat)+','+encodeURI(long)+'?units=si'
+        const url = 'https://api.darksky.net/forecast//'+encodeURI(lat)+','+encodeURI(long)+'?units=si'
         const response = await got(url).json();
         data = {
             summary: response.daily.data[0].summary,
