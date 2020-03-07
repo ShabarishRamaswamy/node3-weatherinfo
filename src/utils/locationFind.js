@@ -2,7 +2,7 @@ const got = require('got');
 
 const locationFind = async(map_box_url, callback) => {
     try{
-        map_box = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURI(map_box_url) +'.json?access_token=pk.&limit=1'
+        map_box = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURI(map_box_url) +'.json?access_token=pk.eyJ1IjoibWFnbWFzdHJvbSIsImEiOiJjazZ4b2dndGswZnp1M2ZzNm1qZG9sN2g3In0.qCxrM4l29TOO1NxNA_BeBA&limit=1'
         const response = await got(map_box).json()
         if (!response.features){
             // console.log('Please Enter Correct Location')
