@@ -7,15 +7,16 @@ const got = require('got');
 const locationFind = require(__dirname+'/utils/locationFind')
 const forecast = require(__dirname+'/utils/forecast')
 var place_name, coordintes, perciProb, temp, summary
-const patialsPath = 'D:/Programming/firstnode/web-server/templates/partials/'
+const patialsPath = '../templates/partials'
+const viewsPath = '../templates/views'
 
 //Set up handlebars and views location
 app.set('view engine', 'hbs')
-app.set('views', 'D:/Programming/firstnode/web-server/templates/views');
-hbs.registerPartials(patialsPath)
+app.set('views', path.join(__dirname, viewsPath));
+hbs.registerPartials(path.join(__dirname, patialsPath))
 
 //Set up static directory to serve
-app.use(express.static(path.join(__dirname, '../public')))
+app.use(express.static('../public'))
 
 app.get('',(req, res)=>{
     res.render('index', {
