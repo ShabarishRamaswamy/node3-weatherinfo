@@ -8,7 +8,7 @@ const msg2 = document.querySelector('#msg2')
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
     const location = userLocationSent.value
-    fetch('http://localhost:3000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
     response.text().then((data)=>{
         if(data == 'Please Enter a Valid Location'|| location ==''){
             msg1.textContent = 'Unable to find the location'
