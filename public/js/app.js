@@ -1,8 +1,3 @@
-
-console.log('Client side is loaded')
-
-
-
 const weatherForm = document.querySelector('form')
 const userLocationSent = document.querySelector('input')
 const msg1 = document.querySelector('#msg1')
