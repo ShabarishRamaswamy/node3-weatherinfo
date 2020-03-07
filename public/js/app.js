@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e)=>{
         }
         else{
             var data = JSON.parse(data)
-            msg1.textContent = 'For the Location : ' + data.Location + '. Temp is : ' + data.temp
+            msg1.textContent = 'For the Location : ' + data.Location + '. Temperature is : ' + data.temp
             msg2.textContent = 'Summary : ' + data.summary + ' And the Percipitation : ' + data.preciProbability
             console.log(data.Location)
             console.log(data.Coordinates)
