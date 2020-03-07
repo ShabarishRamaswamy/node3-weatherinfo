@@ -7,7 +7,7 @@ const got = require('got');
 const locationFind = require(__dirname+'/utils/locationFind')
 const forecast = require(__dirname+'/utils/forecast')
 var place_name, coordintes, perciProb, temp, summary
-const patialsPath = 'D:/Programming/firstnode/web-server/templates/partials/'
+const patialsPath = '../templates/partials/'
 
 //Set up handlebars and views location
 app.set('view engine', 'hbs')
