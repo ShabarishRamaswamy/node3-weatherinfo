@@ -7,7 +7,8 @@ const forecast = async(long, lat, callback)=>{
         data = {
             summary: response.daily.data[0].summary,
             temp: response.currently.temperature,
-            preciProbability: response.currently.precipProbability
+            preciProbability: response.currently.precipProbability,
+            humidity: response.currently.humidity
         }
         callback(data)
     } catch (error) {

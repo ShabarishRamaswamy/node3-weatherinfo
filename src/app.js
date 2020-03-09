@@ -50,9 +50,9 @@ app.get('/weather',(req, res)=>{
             if (!Coordinates){
                 res.send('Please Enter a Valid Location')
             }else{
-            forecast(Coordinates[0], Coordinates[1], ({summary, temp, preciProbability}={})=>{
+            forecast(Coordinates[0], Coordinates[1], ({summary, temp, preciProbability, humidity}={})=>{
         return res.send({
-            Location: place_name, Coordinates, summary, temp, preciProbability})
+            Location: place_name, Coordinates, summary, temp, preciProbability, humidity})
             })
         }
         })

@@ -1,7 +1,6 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js"
@@ -10,9 +9,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "got": "^10.6.0",
     "hbs": "^4.1.0",
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShabarishRamaswamy/node3-weatherinfo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShabarishRamaswamy/node3-weatherinfo/issues"
+  },
+  "homepage": "https://github.com/ShabarishRamaswamy/node3-weatherinfo#readme",
+  "description": ""
 }
